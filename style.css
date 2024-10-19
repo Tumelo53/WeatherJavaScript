@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./image.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    opacity: 0.8;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #1e3c72;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Search Box Styling */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid #eee;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #1e3c72;
+}
+
+button {
+    background: #1e3c72;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2a5298;
+}
+
+/* Weather Info Styling */
+.weather-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 15px;
+    color: #1e3c72;
+    font-size: 1.2em;
+}
+
+.main-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.temperature {
+    font-size: 3em;
+    color: #1e3c72;
+    font-weight: bold;
+}
+
+.description {
+    color: #666;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.detail-item {
+    text-align: center;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+}
+
+.detail-item i {
+    color: #1e3c72;
+    margin-bottom: 5px;
+}
+
+.loading {
+    text-align: center;
+    color: #666;
+    display: none;
+    margin: 10px 0;
+}
+
+.error {
+    color: #dc3545;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
